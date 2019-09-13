@@ -9,7 +9,7 @@ from django.http import HttpResponse
 def index(request):
 
     #return HttpResponse(u"欢迎光临！ ---彪彪！")
-    return render(request, 'home.html')
+    return render(request, 'first_app/home_extends.html')
 
 
 # add
