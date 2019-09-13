@@ -36,3 +36,10 @@ def variable(request):
     return render(request, 'first_app/variable.html', {'string': string})
 
 
+# for_user 使用
+def for_use(request):
+
+    tmp = ['one', 'two', 'three', 'four']
+    return render(request, 'first_app/for.html', {'tmp': tmp})
+
+
