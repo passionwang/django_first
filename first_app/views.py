@@ -29,3 +29,10 @@ def add2(request, a, b):
     return HttpResponse(str(c))
 
 
+# variable 使用
+def variable(request):
+
+    string = u"好好学习，天天向上！"
+    return render(request, 'first_app/variable.html', {'string': string})
+
+

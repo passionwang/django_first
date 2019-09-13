@@ -23,4 +23,5 @@ urlpatterns = [
     path('', first_app_views.index, name='home'),
     path('add/', first_app_views.add, name='calc_add1'),
     path('add/<int:a>/<int:b>/', first_app_views.add2, name='calc_add2'),
+    path('variable/', first_app_views.variable, name='variable'),
 ]
