@@ -20,7 +20,7 @@ from first_app import views as first_app_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     # welcome
-    path('', first_app_views.index),
-    path('add/', first_app_views.add),
-    path('add/<int:a>/<int:b>/', first_app_views.add2),
+    path('', first_app_views.index, name='home'),
+    path('add/', first_app_views.add, name='calc_add1'),
+    path('add/<int:a>/<int:b>/', first_app_views.add2, name='calc_add2'),
 ]

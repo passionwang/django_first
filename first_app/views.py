@@ -8,7 +8,8 @@ from django.http import HttpResponse
 # welcome
 def index(request):
 
-    return HttpResponse(u"欢迎光临！ ---彪彪！")
+    #return HttpResponse(u"欢迎光临！ ---彪彪！")
+    return render(request, 'home.html')
 
 
 # add
